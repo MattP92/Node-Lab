@@ -1,9 +1,9 @@
 const http = require("http");
-const user = require('./facts');
+const about = require('./facts');
 
-const onRequest = (request, response) => {
+const onRequest = (request, response) => {let change = about[Math.floor(Math.random()*about.length)];
     response.writeHead(200, { "Content-type": "text/plain" });
-    response.write(`${user.show}`);
+    response.write(`${change.about}`);
     response.end();
 }
 
