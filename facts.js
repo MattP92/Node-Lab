@@ -1,6 +1,20 @@
-let fact = ["I'm 26", "My car is a Mazda", "I play soccer", "I ski"];
-let show = fact[Math.floor(fact.length * Math.random())];
+"use strict";
 
-module.exports = {
-    show
-}; 
+const about = [
+ {
+   "about": "I am 26"
+ },
+ {
+
+   "about": "I drive a mazda"
+ },
+ {
+   "about": "I have a brother"
+ },
+ {
+
+   "about": "I have 2 sisters"
+ }
+];
+
+module.exports = about;
